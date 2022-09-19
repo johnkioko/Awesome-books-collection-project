@@ -5,6 +5,7 @@ const form = document.getElementById('book-form');
 const library = document.getElementById('library');
 let book;
 let bookList = JSON.parse(localStorage.getItem('bookList')) || [];
+
 function addBook() {
   book = {
     title: title.value,
@@ -14,6 +15,18 @@ function addBook() {
   bookList.push(book);
   localStorage.setItem('bookList', JSON.stringify(bookList));
 }
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  if (title.value !== '' && author.value !== '') {
+    addBook();
+    populate(book);
+    form.reset();
+  } else {
+    alert('Please enter a title and author');
+  }
+});
+
 function removeBook(id) {
   bookList = bookList.filter((books) => books.id !== id);
   localStorage.setItem('bookList', JSON.stringify(bookList));
@@ -33,4 +46,5 @@ function populate(book) {
     removeBook(book.id);
   });
 }
+
 bookList.forEach(populate);
