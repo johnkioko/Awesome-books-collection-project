@@ -9,3 +9,7 @@ const books = [
     Author: '',
   },
 ];
+
+function addBook() {
+  addBtn.addEventListener('click', () => {});
+}
