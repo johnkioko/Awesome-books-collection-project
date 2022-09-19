@@ -34,14 +34,3 @@ function populate(book) {
   });
 }
 bookList.forEach(populate);
-
-form.addEventListener('submit', (e) => {
-  e.preventDefault();
-  if (title.value !== '' && author.value !== '') {
-    addBook();
-    populate(book);
-    form.reset();
-  } else {
-    alert('Please enter a title and author');
-  }
-});
