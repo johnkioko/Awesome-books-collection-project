@@ -2,19 +2,18 @@
 
 # My Portofolio Project
 
-> This is a corporate website for an SEO firm. Its built with html, css and javascript. It is a capstone project used to test mastery in css, html and javascript. it is hosted on github pages and you can click on the demo link below to visit it. 
+> This is a basic web project that allows users to add and Remove books from a list. 
 
 ## Built With
 
 - Html
-- Css
 - Javascript
 - Git and Github
 
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://johnkioko.github.io/Capstone-Web-Project/index.html)
+[Live Demo Link]()
 
 
 ## Getting Started
@@ -52,8 +51,8 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-Cindy Shin in Behance - This project was built following a design by Cindy Shin.
-
+ Orji Chukwuemeka
+ 
 - Hat tip to anyone whose code was used
 - Inspiration
 - etc
