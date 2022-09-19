@@ -7,19 +7,21 @@
     <title>Document</title>
   </head>
   <body>
-    <div>
-      <h1>Awesome Books</h1>
-      <form action="" method="post">
-        <label>
-          <input type="text" name="book_name" required />
-        </label>
-
-        <input type="text" name="book_title" required placeholder="Title" />
-        <input type="text" name="book_Author" required placeholder="Author" />
-        <button type="submit" class="add-btn">Add</button>
-        <button type="submit" class="remove-btn">Remove</button>
-      </form>
-    </div>
+    <h1>Awesome Books</h1>
+    <table>
+      <tr>
+        <th>Title</th>
+        <th>Author</th>
+        <th></th>
+      </tr>
+      <tbody id="library"></tbody>
+    </table>
+    <br />
+    <form id="book-form" action="#">
+      <input id="title" type="text" placeholder="Title" /> <br /><br />
+      <input id="author" type="text" placeholder="Author" /><br /><br />
+      <input id="add" type="submit" value="Add" />
+    </form>
 
     <script src="index.js"></script>
   </body>
