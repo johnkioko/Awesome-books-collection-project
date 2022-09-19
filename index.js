@@ -16,17 +16,6 @@ function addBook() {
   localStorage.setItem('bookList', JSON.stringify(bookList));
 }
 
-form.addEventListener('submit', (e) => {
-  e.preventDefault();
-  if (title.value !== '' && author.value !== '') {
-    addBook();
-    populate(book);
-    form.reset();
-  } else {
-    alert('Please enter a title and author');
-  }
-});
-
 function removeBook(id) {
   bookList = bookList.filter((books) => books.id !== id);
   localStorage.setItem('bookList', JSON.stringify(bookList));
@@ -48,3 +37,14 @@ function populate(book) {
 }
 
 bookList.forEach(populate);
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  if (title.value !== '' && author.value !== '') {
+    addBook();
+    populate(book);
+    form.reset();
+  } else {
+    alert('Please enter a title and author');
+  }
+});
