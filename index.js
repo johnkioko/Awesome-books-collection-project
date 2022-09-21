@@ -13,16 +13,14 @@ class UI {
     const books = document.querySelector('.books');
     const newBook = document.createElement('div');
     newBook.innerHTML = `
-      <div>
+      <div class='display'>
       <div class="bookDiv">
-      <div class="bookTitleAuthor">
-      <h4 id="title">"${book.title}"</h4>
-      <p class="by">by</p>
-      <h4 id="author" >${book.author}</h4>
+        <div class="bookTitleAuthor">
+          <h4 id="title">"${book.title}"</h4>
+          <h4 id="author"> by ${book.author}</h4>
+        </div>
+        <button class="delete">Remove</button>
       </div>
-      <button class="delete">Remove</button>
-      </div>
-      <hr class="hr">
       </div>
       `;
     newBook.classList.add('newBook');
