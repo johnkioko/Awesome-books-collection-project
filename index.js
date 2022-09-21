@@ -5,9 +5,6 @@ class Book {
   constructor(title, author, id = Math.floor(Math.random() * 1000000)) {
     this.title = title;
     this.author = author;
-<<<<<<< HEAD
-    this.id = id;
-=======
   }
 }
 class UI {
@@ -70,7 +67,6 @@ class Store {
     const filtIndex = books.indexOf(filt[0]);
     books.splice(filtIndex, 1);
     localStorage.setItem('books', JSON.stringify(books));
->>>>>>> e2e94b4dbfc25e48c6a41c8471c0a793d483f770
   }
 }
 
