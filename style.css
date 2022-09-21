@@ -1,16 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap');
+
 * {
   box-sizing: border-box;
+  /* padding: 0;
+  margin: 0; */
+}
+
+body {
+  font-family: 'Comic Neue', cursive;
 }
 
 #main {
   margin: 0 auto;
   text-align: center;
-}
-
-.hr {
-  width: 5%;
-  margin: 0 auto;
-  margin-top: 1em;
 }
 
 .bookForm {
@@ -27,7 +29,46 @@ input {
   align-items: center;
 }
 
-.btn {
+.add {
   margin-right: -8.5em;
   margin-top: 5px;
+  font-weight: 700;
+  border-radius: 5px;
+  padding: 4px;
+  font-family: 'Comic Neue', cursive;
+}
+
+.delete {
+  height: 30px;
+  text-align: center;
+  font-weight: 700;
+  border-radius: 5px;
+}
+
+.author {
+  border: 1px solid black;
+  border-radius: 3px;
+  height: 30px;
+  width: 20%;
+}
+
+.title {
+  border: 1px solid black;
+  border-radius: 3px;
+  height: 30px;
+  width: 20%;
+}
+
+#title,
+#author {
+  font-size: 20px;
+}
+
+.bookDiv {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.bookTitleAuthor {
+  display: flex;
 }
