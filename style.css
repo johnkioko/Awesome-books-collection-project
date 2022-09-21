@@ -45,7 +45,7 @@ input {
   }
 }
 
-.remove {
+#remove {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -59,6 +59,7 @@ input {
   text-align: center;
   font-weight: 700;
   border-radius: 5px;
+  margin-top: 1.5em;
 }
 
 .author {
