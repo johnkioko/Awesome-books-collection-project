@@ -1,4 +1,33 @@
-.wrapper {
-  width: 100%;
+* {
+  box-sizing: border-box;
+}
+
+#main {
   margin: 0 auto;
+  text-align: center;
+}
+
+.hr {
+  width: 5%;
+  margin: 0 auto;
+  margin-top: 1em;
+}
+
+.bookForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2em;
+}
+
+input {
+  margin: 2px 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  margin-right: -8.5em;
+  margin-top: 5px;
 }
