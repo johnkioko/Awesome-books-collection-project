@@ -4,7 +4,7 @@ class Book {
     this.author = author;
   }
 }
-static UI {
+class UI {
   static displayBooks() {
     const books = Store.getBooks();
     books.forEach((book) => UI.addBookToList(book));
@@ -40,7 +40,7 @@ static UI {
   }
 }
 
-static Store {
+class Store {
   static getBooks() {
     let books;
     if (localStorage.getItem('books') === null) {
