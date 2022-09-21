@@ -2,8 +2,6 @@
 
 * {
   box-sizing: border-box;
-  /* padding: 0;
-  margin: 0; */
 }
 
 body {
@@ -30,7 +28,7 @@ input {
 }
 
 .add {
-  margin-right: -8.5em;
+  margin-right: -16.5em;
   margin-top: 5px;
   font-weight: 700;
   border-radius: 5px;
@@ -38,7 +36,25 @@ input {
   font-family: 'Comic Neue', cursive;
 }
 
+@media (max-width: 768px) {
+  .add {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: center;
+  }
+}
+
+.remove {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .delete {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 30px;
   text-align: center;
   font-weight: 700;
@@ -64,9 +80,15 @@ input {
   font-size: 20px;
 }
 
+#author {
+  padding-left: 5px;
+}
+
 .bookDiv {
   display: flex;
-  justify-content: space-evenly;
+  width: 40%;
+  margin: 0 auto;
+  justify-content: space-between;
 }
 
 .bookTitleAuthor {
