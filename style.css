@@ -72,3 +72,12 @@ input {
 .bookTitleAuthor {
   display: flex;
 }
+
+.line {
+  height: 4px;
+  color: aqua;
+  width: 100px;
+  align-items: center;
+  display: flex;
+  background-color: red;
+}
