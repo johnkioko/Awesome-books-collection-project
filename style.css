@@ -8,12 +8,18 @@ body {
   font-family: 'Comic Neue', cursive;
 }
 
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
 .navbar {
   height: 50px;
   background: lightsteelblue;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border: solid 3px #000;
 }
 
 .nav-item {
@@ -42,14 +48,17 @@ body {
   color: lightcyan;
 }
 
-.footer {
-  height: 100px;
+footer {
+  display: flex;
+  height: auto;
+  border: solid 3px #000;
   background: lightsteelblue;
-  text-align: center;
+  justify-content: flex-start;
   font-size: 25px;
   bottom: 0;
-  width: 100%;
+  width: 80%;
   position: fixed;
+  padding-left: 5em;
 }
 
 .contact-head {
@@ -127,6 +136,8 @@ input {
 }
 
 .add {
+  display: flex;
+  justify-content: flex-end;
   margin-top: 5px;
   font-weight: 700;
   border-radius: 5px;
@@ -157,26 +168,22 @@ input {
 
 .delete {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   height: 30px;
-  text-align: center;
   font-weight: 700;
   border-radius: 5px;
-  margin-top: 1.5em;
+  box-shadow: 2px 2px #000;
+  margin: 1em;
 }
 
 .author {
-  border: 1px solid black;
   border-radius: 3px;
-  height: 30px;
   width: 20%;
 }
 
 .title {
-  border: 1px solid black;
   border-radius: 3px;
-  height: 30px;
   width: 20%;
 }
 
@@ -189,13 +196,32 @@ input {
   padding-left: 5px;
 }
 
+.books {
+  border: solid 3px blue;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.books-outer-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+}
+
 .bookDiv {
   display: flex;
-  width: 40%;
-  margin: 0 auto;
   justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin: 0 auto;
 }
 
 .bookTitleAuthor {
   display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
