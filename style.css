@@ -8,6 +8,48 @@ body {
   font-family: 'Comic Neue', cursive;
 }
 
+.wrapper {
+  width: 100%;
+  max-width: 80%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.navbar {
+  border: red solid 3px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.nav-item {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style-type: none;
+}
+
+.nav-link {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  text-decoration: none;
+  margin-right: 1em;
+}
+
+footer {
+  padding-left: 1em;
+}
+
+.page {
+  display: none;
+  width: 100%;
+}
+
+.active {
+  display: block;
+}
+
 #main {
   margin: 0 auto;
   text-align: center;
@@ -28,7 +70,7 @@ input {
 }
 
 .add {
-  margin-right: -16.5em;
+  /* margin-right: -16.5em; */
   margin-top: 5px;
   font-weight: 700;
   border-radius: 5px;

@@ -14,13 +14,35 @@
     />
   </head>
   <body>
+    <div class="wrapper">
+      <header>
+        <nav class="navbar">
+          <ul class="nav-item">
+            <li><a href="#" data-target="list" class="nav-link" >List</a></li>
+            <li><a href="#" data-target="add-new" class="nav-link">Add new</a></li>
+            <li><a href="#" data-target="contact" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+
+    <!-- Main Section -->
+
     <main id="main">
-    <div><h1 class="awesomeBooks">All Awesome Books</h1></div>
 
-    <div class="books">
-        
-    </div>
+    <!-- Homepage -->
 
+    <section class="page active" id="list">
+      <div>
+        <h1 class="awesomeBooks">All Awesome Books</h1>
+      </div>
+
+      <div class="books">
+          
+      </div>
+
+  </section>
+  <section class="page" id="add-new">
     <form class="bookForm">
         <h2>Add a new book</h2>
         <input type="text" name="title" class="title" id="title" placeholder="Title">
@@ -29,10 +51,32 @@
         <input type="text" id="author" name="author" class="author" placeholder="Author">
       
         <div class="btn">
-          <div class="remove"><button type="submit" class="add"> Add</button></div>
+          <button type="submit" class="add"> Add</button>
         </div>
     </form>
+
+  </section>
+
+  <!-- Contact Section  -->
+
+  <section class="page" id="contact">
+    <h2>Contact information</h2>
+    <p>Call us Today: 012345678</p>
+    <p>hello@gmail.com</p>
+  </section>
+
   </main>
+
+  <footer>
+    <div>
+      <p>
+        copyright..
+      </p>
+    </div>
+  </footer>
+
+
+</div>
 
 
     <script src="index.js" type="module"></script>

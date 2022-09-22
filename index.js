@@ -34,3 +34,28 @@ document.querySelector('.books').addEventListener('click', (e) => {
     UI.deleteBook(e.target);
   }
 });
+
+const app = {
+  pages: [],
+  show: new Event('show'),
+  init() {
+    app.pages = document.querySelectorAll('.page');
+    app.pages.forEach((pg) => {
+      pg.addEventListener('show', app.pageShown);
+    });
+
+    document.querySelectorAll('.nav-link').forEach((link) => {
+      link.addEventListener('click', app.nav);
+    });
+  },
+  nav(ev) {
+    ev.preventDefault();
+    const currentPage = ev.target.getAttribute('data-target');
+    document.querySelector('.active').classList.remove('active');
+    document.getElementById(currentPage).classList.add('active');
+    document.getElementById(currentPage).dispatchEvent(app.show);
+  },
+
+};
+
+document.addEventListener('DOMContentLoaded', app.init);
