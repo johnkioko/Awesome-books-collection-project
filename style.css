@@ -140,9 +140,8 @@ input {
 }
 
 .add {
-  display: flex;
-  justify-content: flex-end;
   margin-top: 5px;
+  margin-right: -10em;
   font-weight: 700;
   border-radius: 5px;
   font-family: 'Comic Neue', cursive;
@@ -182,6 +181,7 @@ input {
 
 .delete {
   padding: 6px 12px;
+  box-shadow: 2px 2px #000;
 }
 
 .books {
