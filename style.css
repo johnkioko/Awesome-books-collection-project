@@ -71,6 +71,10 @@ footer {
   font-size: 30px;
 }
 
+.contact-icons li {
+  list-style: none;
+}
+
 .contact-icons a {
   color: #282828;
   text-decoration: none;
@@ -155,36 +159,16 @@ input {
   }
 }
 
-#remove {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-}
-
 .awesome-books {
   margin-bottom: 40px;
 }
 
-.delete {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  height: 30px;
-  font-weight: 700;
-  border-radius: 5px;
-  box-shadow: 2px 2px #000;
-  margin: 1em;
-}
-
 .author {
   border-radius: 3px;
-  width: 20%;
 }
 
 .title {
   border-radius: 3px;
-  width: 20%;
 }
 
 #title,
@@ -196,32 +180,26 @@ input {
   padding-left: 5px;
 }
 
-.books {
-  border: solid 3px blue;
-  margin-top: 0;
-  margin-bottom: 0;
+.delete {
+  padding: 6px 12px;
 }
 
-.books-outer-div {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 90%;
-  margin: 0 auto;
+.books {
+  border: solid 2px #000;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .bookDiv {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  width: 90%;
-  padding-top: 0;
-  padding-bottom: 0;
-  margin: 0 auto;
+  padding: 0.5rem;
+}
+
+.newBook:nth-child(odd) {
+  background-color: rgb(213, 213, 213);
 }
 
 .bookTitleAuthor {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
+  font-size: 18px;
 }
