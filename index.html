@@ -4,28 +4,38 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <title>Awesome Books</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div class="wrapper">
-      <h1>Awesome Books</h1>
-      <table>
-        <tr>
-          <th>Title</th>
-          <th>Author</th>
-          <th></th>
-        </tr>
-        <tbody id="library"></tbody>
-      </table>
-      <br />
-      <form id="book-form" action="#">
-        <input id="title" type="text" placeholder="Title" /> <br /><br />
-        <input id="author" type="text" placeholder="Author" /><br /><br />
-        <input id="add" type="submit" value="Add" />
-      </form>
-  </div>
+    <main id="main">
+    <div><h1 class="awesomeBooks">All Awesome Books</h1></div>
 
-    <script src="index.js"></script>
+    <div class="books">
+        
+    </div>
+
+    <form class="bookForm">
+        <h2>Add a new book</h2>
+        <input type="text" name="title" class="title" id="title" placeholder="Title">
+      
+       
+        <input type="text" id="author" name="author" class="author" placeholder="Author">
+      
+        <div class="btn">
+          <div class="remove"><button type="submit" class="add"> Add</button></div>
+        </div>
+    </form>
+  </main>
+
+
+    <script src="index.js" type="module"></script>
+
   </body>
 </html>
