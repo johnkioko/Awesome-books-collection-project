@@ -9,15 +9,11 @@ export default class UI {
   static addBookToList(book) {
     const books = document.querySelector('.books');
     const newBook = document.createElement('div');
-
     newBook.innerHTML = `
-    <div>
-    <div class="bookDiv">
-    <h4 id="title" class="bookTitleAuthor">"${book.title}" &nbsp; by &nbsp; ${book.author}</h4>
-    
-      <button id="remove" class="delete">Remove</button>
-    </div>
-    </div>
+      <div class="bookDiv">
+        <p id="title" class="bookTitleAuthor">"${book.title}" by &nbsp; ${book.author}</p>
+        <button id="remove" class="delete">Remove</button>
+      </div>
     `;
     newBook.classList.add('newBook');
     books.appendChild(newBook);
